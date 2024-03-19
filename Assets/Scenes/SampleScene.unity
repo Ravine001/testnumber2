@@ -444,7 +444,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8074852101285985160}
-  - component: {fileID: 4609775035384260502}
   - component: {fileID: 5367598578003535482}
   m_Layer: 7
   m_Name: Rotation
@@ -1324,27 +1323,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &4609775035384260502
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484649757671069190}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9ac5be3d6099e194499513ce451a9636, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4620461698379532624
 GameObject:
   m_ObjectHideFlags: 0
@@ -1420,9 +1398,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 484649757671069190}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 132d454dfc6d7c340b8cada6de4d32fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  g_Default: {fileID: 5784195175801894432}
+  g_HoldUp: {fileID: 1622247269180011196}
+  g_AimPos: {fileID: 5129131521724427531}
+  g_WeaponHolder: {fileID: 8074852101285985160}
+  g_defaultVal: 1
+  g_holdingUp: 0
+  g_Aiming: 0
+  sp_DefToHold: 7
+  sp_HoldToDef: 10
+  sp_HoldToAim: 12
+  HoldUp: 324
+  Aim: 325
+  p_Controller: {fileID: 0}
 --- !u!4 &5424012580182037852
 Transform:
   m_ObjectHideFlags: 0
@@ -1861,6 +1852,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8377575629889350305}
   - component: {fileID: 5899396201345644957}
+  - component: {fileID: 8377575629889350306}
   m_Layer: 7
   m_Name: Recoil
   m_TagString: Untagged
@@ -2100,6 +2092,36 @@ Transform:
   - {fileID: 2752036473882712252}
   m_Father: {fileID: 2774163657032169096}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8377575629889350306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7469702558034011341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a67bdf55b92250a4fae0cb899c67516a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recoilObj: {fileID: 8377575629889350305}
+  recoilReturn: {fileID: 2752036473882712252}
+  recoilObjCalc: {fileID: 8074852101285985160}
+  RecoilX: -10
+  RecoilY: -12
+  RecoilZ: -14
+  RecoilKickZ: -0.1
+  RecoilMaxX: -3
+  RecoilMaxY: -4
+  RecoilMaxZ: -3
+  RecoilKickMaxZ: -0.2
+  ReturnSpeed: 7
+  KickReturnSpeed: 20
+  RecoilSpeed: 1
+  MuzzleFlashObj: {fileID: 0}
+  Flashlight: {fileID: 0}
+  Bullet: {fileID: 0}
+  BulletSpawn: {fileID: 0}
 --- !u!4 &8390266767213081005
 Transform:
   m_ObjectHideFlags: 0
