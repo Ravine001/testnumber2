@@ -65,15 +65,23 @@ public class GunController : MonoBehaviour
 
 
 
-            if (Input.GetKeyDown(Aim))
-            {
-                g_defaultVal = false;
-                g_holdingUp = false;
-                g_Aiming = true;
-            }
+            
 
         }
-       
+        if (Input.GetKeyDown(Aim) && g_holdingUp)
+        {
+            g_defaultVal = false;
+            g_holdingUp = false;
+            g_Aiming = true;
+        }
+        else if (Input.GetKeyUp(Aim) && g_holdingUp)
+        {
+            g_defaultVal = false;
+            g_holdingUp = false;
+            g_Aiming = false;
+        }
+
+
     }
 
     private void holsterDetection()
