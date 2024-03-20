@@ -74,10 +74,10 @@ public class GunController : MonoBehaviour
             g_holdingUp = false;
             g_Aiming = true;
         }
-        else if (Input.GetKeyUp(Aim) && g_holdingUp)
+        else if (Input.GetKeyUp(Aim))
         {
             g_defaultVal = false;
-            g_holdingUp = false;
+            g_holdingUp = true;
             g_Aiming = false;
         }
 
