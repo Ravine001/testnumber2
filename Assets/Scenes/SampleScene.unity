@@ -2165,6 +2165,7 @@ GameObject:
   - component: {fileID: 5424012580182037852}
   - component: {fileID: 4069309648085697204}
   - component: {fileID: 2472226292802122342}
+  - component: {fileID: 7234411643264135783}
   - component: {fileID: 7234411643264135782}
   - component: {fileID: 2522238154955307962}
   - component: {fileID: 1878103914659738456}
@@ -2545,7 +2546,7 @@ MonoBehaviour:
   volumeTrigger: {fileID: 5424012580182037852}
   volumeLayer:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1598
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 0
   antialiasingMode: 0
@@ -2624,6 +2625,22 @@ MonoBehaviour:
   size: 0.3
   blur: 0.3
   material: {fileID: 2100000, guid: f98dbdbfeca5f4057ae9b03b9cd8724e, type: 2}
+--- !u!114 &7234411643264135783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5459260516665498240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df4606960e3640e7a8481bf09ad48ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  on: 1
+  horizontal: 900
+  vertical: 900
+  material: {fileID: 2100000, guid: fee703b533e5e4d719b3a810b8e77f0e, type: 2}
 --- !u!1 &7394137973700412947
 GameObject:
   m_ObjectHideFlags: 0
