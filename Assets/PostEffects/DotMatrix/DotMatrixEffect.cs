@@ -5,7 +5,7 @@ public class DotMatrixEffect : MonoBehaviour {
 
 	public bool on = false;
 
-	[Range(1, 200)]
+	[Range(1, 100000)]
 	public int amount = 40;
 
 	[Range(0.01f, 1f)]

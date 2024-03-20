@@ -1375,7 +1375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   on: 1
-  level: 89
+  level: 86
   material: {fileID: 2100000, guid: 84da12828e118449c8833ae1aa31804d, type: 2}
 --- !u!114 &1920312914097757669
 MonoBehaviour:
@@ -1390,7 +1390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   on: 1
-  thickDistort: 0.8
+  thickDistort: 1.05
   fineDistort: 2.14
   material: {fileID: 2100000, guid: 0b2b1aef91c2345ab8d2fecf276fba3c, type: 2}
 --- !u!33 &2050509604131980069
@@ -2165,6 +2165,7 @@ GameObject:
   - component: {fileID: 5424012580182037852}
   - component: {fileID: 4069309648085697204}
   - component: {fileID: 2472226292802122342}
+  - component: {fileID: 7234411643264135782}
   - component: {fileID: 2522238154955307962}
   - component: {fileID: 1878103914659738456}
   - component: {fileID: 4037586823083391923}
@@ -2606,6 +2607,23 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   priority: 0
+--- !u!114 &7234411643264135782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5459260516665498240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c2daef3b68f34c82a761e49be59f76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  on: 1
+  amount: 400
+  size: 0.3
+  blur: 0.3
+  material: {fileID: 2100000, guid: f98dbdbfeca5f4057ae9b03b9cd8724e, type: 2}
 --- !u!1 &7394137973700412947
 GameObject:
   m_ObjectHideFlags: 0
