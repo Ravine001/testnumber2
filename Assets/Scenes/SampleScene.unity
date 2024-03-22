@@ -8437,27 +8437,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7391475984898671857}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a67bdf55b92250a4fae0cb899c67516a, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ff46506e3a4a0a449d109e84c9e6a2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recoilObj: {fileID: 6545070356817766024}
-  recoilReturn: {fileID: 531429851}
-  recoilObjCalc: {fileID: 1553871826}
-  RecoilX: 0
-  RecoilY: 0
-  RecoilZ: -0.05
-  RecoilKickZ: 0
-  RecoilMaxX: 0
-  RecoilMaxY: 0
-  RecoilMaxZ: -0.05
-  RecoilKickMaxZ: 0
-  ReturnSpeed: 15.98
-  KickReturnSpeed: 19.15
-  RecoilSpeed: 0
-  MuzzleFlashObj: {fileID: 0}
-  Flashlight: {fileID: 0}
-  Bullet: {fileID: 0}
-  BulletSpawn: {fileID: 0}
+  checkingMag: 0
+  CheckMagRetDelay: 0
+  pistolSlide: {fileID: 6545070356817766024}
+  slideReturn: {fileID: 531429851}
+  PistolSlideX: 0.1
+  returnSpeed: 15
 --- !u!1 &7394137973700412947
 GameObject:
   m_ObjectHideFlags: 0
