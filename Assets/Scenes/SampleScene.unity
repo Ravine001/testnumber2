@@ -7418,10 +7418,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e983ed817127f8e4ead2ee1b2ee41594, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leanSpeed: 8
+  leanSpeed: 4
   leanLeft: 113
   leanRight: 101
-  leanReturnSpeed: 7
+  leanReturnSpeed: 3
   defaultLean: {fileID: 706734082}
   leanObject: {fileID: 1152268742}
   m_Camera: {fileID: 540564371}
