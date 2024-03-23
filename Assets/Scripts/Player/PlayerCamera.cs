@@ -73,7 +73,7 @@ public class PlayerCamera : MonoBehaviour
             
             transform.rotation = Quaternion.Lerp(transform.rotation, roughRotation.rotation, lookSmooth * Time.deltaTime);
             orientation.rotation = Quaternion.Euler(0, yRotation, 0);
-            flashlight.rotation = Quaternion.Lerp(flashlight.rotation, transform.rotation, flashMoveSpeed * Time.deltaTime);
+            flashlight.localRotation = Quaternion.Lerp(flashlight.localRotation, transform.localRotation, flashMoveSpeed * Time.deltaTime);
         }
         else if (Input.GetKey(KeyCode.LeftAlt))
         {
