@@ -36,11 +36,26 @@ public class PlayerLean : MonoBehaviour
         {
             leanCalculationObject.localRotation = Quaternion.Euler(0, 0, l_rotLeft);
             leanObject.localRotation = Quaternion.Lerp(leanObject.localRotation, leanCalculationObject.localRotation, leanSpeed * Time.deltaTime);
+            m_Camera.localRotation = Quaternion.Lerp(m_Camera.localRotation, leanCalculationObject.localRotation, leanSpeed * Time.deltaTime);
         }
         else
         {
             leanCalculationObject.localRotation = Quaternion.Euler(0, 0, 0);
             leanObject.localRotation = Quaternion.Lerp(leanObject.localRotation, leanCalculationObject.localRotation, leanReturnSpeed * Time.deltaTime);
+            m_Camera.localRotation = Quaternion.Lerp(m_Camera.localRotation, leanCalculationObject.localRotation, leanReturnSpeed * Time.deltaTime);
+        }
+
+        if (Input.GetKey(leanRight))
+        {
+            leanCalculationObject.localRotation = Quaternion.Euler(0, 0, l_rotRight);
+            leanObject.localRotation = Quaternion.Lerp(leanObject.localRotation, leanCalculationObject.localRotation, leanSpeed * Time.deltaTime);
+            m_Camera.localRotation = Quaternion.Lerp(m_Camera.localRotation, leanCalculationObject.localRotation, leanSpeed * Time.deltaTime);
+        }
+        else
+        {
+            leanCalculationObject.localRotation = Quaternion.Euler(0, 0, 0);
+            leanObject.localRotation = Quaternion.Lerp(leanObject.localRotation, leanCalculationObject.localRotation, leanReturnSpeed * Time.deltaTime);
+            m_Camera.localRotation = Quaternion.Lerp(m_Camera.localRotation, leanCalculationObject.localRotation, leanReturnSpeed * Time.deltaTime);
         }
     }
 }
