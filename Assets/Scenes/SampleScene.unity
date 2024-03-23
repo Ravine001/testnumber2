@@ -7428,8 +7428,8 @@ MonoBehaviour:
   m_CameraMain: {fileID: 5424012580182037852}
   leanCalculationObject: {fileID: 692544708}
   camLeanCalculationObject: {fileID: 1469721372}
-  l_rotLeft: 45
-  l_rotRight: -45
+  l_rotLeft: 65
+  l_rotRight: -65
 --- !u!1 &1404362584
 GameObject:
   m_ObjectHideFlags: 0
