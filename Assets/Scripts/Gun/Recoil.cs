@@ -25,6 +25,9 @@ public class Recoil : MonoBehaviour
     public GameObject Bullet;
     public Transform BulletSpawn;
 
+    public GameObject GunshotSFX;
+    public Transform GunshotTransform;
+
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Mouse0))
@@ -40,25 +43,20 @@ public class Recoil : MonoBehaviour
 
     public void RecoilAction()
     {
+
+
         recoilObj.localRotation = Quaternion.Euler(Random.Range(RecoilX, RecoilMaxX) + recoilObjCalc.localRotation.x, Random.Range(RecoilY, RecoilMaxY) + recoilObjCalc.localRotation.y, Random.Range(RecoilZ, RecoilMaxZ) + recoilObjCalc.localRotation.z);
         recoilObj.localPosition = new Vector3(recoilObj.localPosition.x, recoilObj.localPosition.y, Random.Range(RecoilKickZ, RecoilKickMaxZ));
-        StartCoroutine(MuzzleFlash());
-        GameObject NewBullet = Instantiate(Bullet, BulletSpawn.transform.position, BulletSpawn.rotation);
         
+        GameObject NewBullet = Instantiate(Bullet, BulletSpawn.transform.position, BulletSpawn.rotation);
+
+        GameObject GunshotSFXObject = Instantiate(GunshotSFX, GunshotTransform.transform.position, GunshotTransform.rotation);
     }
 
     private void Return()
     {
         recoilObj.localRotation = Quaternion.Lerp(recoilObj.localRotation, recoilReturn.localRotation, Time.deltaTime * ReturnSpeed);
         recoilObj.localPosition = Vector3.Lerp(recoilObj.localPosition, recoilReturn.localPosition, Time.deltaTime * KickReturnSpeed);
-        
-    }
-    IEnumerator MuzzleFlash()
-    {
-        MuzzleFlashObj.SetActive(true);
-        
-        yield return new WaitForSeconds(0.01f);
-        MuzzleFlashObj.SetActive(false);
         
     }
 }

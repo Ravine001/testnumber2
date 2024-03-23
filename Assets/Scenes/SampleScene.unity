@@ -6145,6 +6145,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1404362585}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &747842627
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 747842628}
+  m_Layer: 9
+  m_Name: GunshotSFXSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &747842628
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747842627}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8377575629889350305}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &765714382
 GameObject:
   m_ObjectHideFlags: 0
@@ -7992,12 +8023,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206223423}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.216, y: 0.064, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.18301281, y: 0.6830127, z: 0.18301278, w: 0.6830127}
+  m_LocalPosition: {x: 4.8072, y: 1.9986321, z: 5.685628}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6102036147365596471}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1206223425
 AudioSource:
@@ -8009,7 +8040,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e891393e32f25494a8721066bd28ebe3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cce4a4bc887fcc14b9569efd97c70aca, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -16278,7 +16309,6 @@ Transform:
   - {fileID: 6545070356817766024}
   - {fileID: 8008465152886122324}
   - {fileID: 7759630584379060529}
-  - {fileID: 1206223424}
   m_Father: {fileID: 216574454}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &6272842500453405858
@@ -17262,6 +17292,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8074852101285985160}
+  - {fileID: 747842628}
   m_Father: {fileID: 1152268742}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8377575629889350306
@@ -17294,6 +17325,8 @@ MonoBehaviour:
   Flashlight: {fileID: 0}
   Bullet: {fileID: 0}
   BulletSpawn: {fileID: 0}
+  GunshotSFX: {fileID: 1206223423}
+  GunshotTransform: {fileID: 747842628}
 --- !u!4 &8390266767213081005
 Transform:
   m_ObjectHideFlags: 0
@@ -17645,5 +17678,6 @@ SceneRoots:
   - {fileID: 1685056452}
   - {fileID: 1014564991}
   - {fileID: 1155453982}
+  - {fileID: 1206223424}
   - {fileID: 597543784}
   - {fileID: 21884066}
