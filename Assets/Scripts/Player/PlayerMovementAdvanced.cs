@@ -115,6 +115,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         if (Input.GetKeyUp(crouchKey))
         {
             transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
+            state = MovementState.walking;
         }
     }
 
@@ -126,25 +127,32 @@ public class PlayerMovementAdvanced : MonoBehaviour
             state = MovementState.crouching;
             moveSpeed = crouchSpeed;
         }
-
+        else if(!Input.GetKey(crouchKey) && grounded)
+        {
+            state = MovementState.walking;
+            moveSpeed = walkSpeed;
+        }
         // Mode - Sprinting
         else if(grounded && Input.GetKey(sprintKey))
         {
             state = MovementState.sprinting;
             moveSpeed = sprintSpeed;
         }
-
         // Mode - Walking
-        else if (grounded)
+        else if(grounded)
         {
             state = MovementState.walking;
             moveSpeed = walkSpeed;
         }
 
-        // Mode - Air
-        else
+
+
+
+
+
+        if (state == MovementState.walking)
         {
-            state = MovementState.air;
+            moveSpeed = walkSpeed;
         }
     }
 
