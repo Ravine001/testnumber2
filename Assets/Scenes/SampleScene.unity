@@ -8401,12 +8401,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206223423}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.18301281, y: 0.6830127, z: 0.18301278, w: 0.6830127}
-  m_LocalPosition: {x: 4.8072, y: 1.9986321, z: 5.685628}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalRotation: {x: 0.000000021073424, y: 0.00000008940697, z: -0.00000006322028,
+    w: 1}
+  m_LocalPosition: {x: -0.21599835, y: 0.063998975, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 6102036147365596471}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1206223425
 AudioSource:
@@ -14082,7 +14083,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f6298605825d7154f8923c76872aa46e, type: 2}
+  - {fileID: 2100000, guid: 291edc2cda203a0418ce52af761097ff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14641,8 +14642,8 @@ MonoBehaviour:
   returnFOV: 110
   zoomFOV: 60
   zoomSpeed: 7
-  CameraHolder: {fileID: 7634002126821669729}
-  flashlight: {fileID: 962934103}
+  CameraHolder: {fileID: 2774163657032169096}
+  flashlight: {fileID: 1233387065}
   flashMoveSpeed: 15
   flashMoveDev: 0
   roughRotation: {fileID: 4215146074283163269}
@@ -16687,6 +16688,7 @@ Transform:
   - {fileID: 6545070356817766024}
   - {fileID: 8008465152886122324}
   - {fileID: 7759630584379060529}
+  - {fileID: 1206223424}
   - {fileID: 688851714}
   m_Father: {fileID: 216574454}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -17704,7 +17706,7 @@ MonoBehaviour:
   Flashlight: {fileID: 0}
   Bullet: {fileID: 0}
   BulletSpawn: {fileID: 0}
-  GunshotSFX: {fileID: 1206223423}
+  GunshotSFX: {fileID: 1206223425}
   GunshotTransform: {fileID: 747842628}
 --- !u!4 &8390266767213081005
 Transform:
@@ -18057,6 +18059,5 @@ SceneRoots:
   - {fileID: 1685056452}
   - {fileID: 1014564991}
   - {fileID: 1155453982}
-  - {fileID: 1206223424}
   - {fileID: 597543784}
   - {fileID: 21884066}
